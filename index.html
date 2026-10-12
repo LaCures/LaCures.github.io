@@ -1,12 +1,23 @@
-
+```html
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mobile Podiatry | Home Visits</title>
-  <meta name="description" content="Mobile podiatry services in the local area, with convenient home visits.">
+
+  <title>LaCures Mobile Foot Health Service | Home Visits</title>
+  <meta name="description" content="LaCures Mobile Foot Health Service offers professional podiatry and foot care home visits in Birmingham and surrounding areas.">
+  <meta name="theme-color" content="#17665f">
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -14,36 +25,78 @@
       color: #263b3b;
       background: #f7faf9;
     }
+
     header {
       background: #17665f;
       color: white;
-      padding: 45px 20px;
+      padding: 35px 20px;
       text-align: center;
     }
-    header h1 { margin-bottom: 8px; }
+
+    .logo {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
+    header h1 {
+      max-width: 900px;
+      margin: 0 auto 10px;
+      font-size: clamp(28px, 5vw, 42px);
+      line-height: 1.25;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 18px;
+    }
+
     nav {
       background: white;
-      padding: 14px;
+      padding: 14px 10px;
       text-align: center;
+      border-bottom: 1px solid #e4eeeb;
     }
+
     nav a {
+      display: inline-block;
       color: #17665f;
-      margin: 0 10px;
+      margin: 4px 10px;
       text-decoration: none;
       font-weight: bold;
     }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     main {
-      max-width: 850px;
+      max-width: 1000px;
       margin: 30px auto;
       padding: 0 20px;
     }
+
     section {
       background: white;
-      margin-bottom: 20px;
-      padding: 24px;
+      margin-bottom: 24px;
+      padding: 28px;
       border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(38, 59, 59, 0.05);
+      scroll-margin-top: 20px;
     }
-    h2 { color: #17665f; }
+
+    h2 {
+      color: #17665f;
+      margin-top: 0;
+      line-height: 1.3;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
     .button {
       display: inline-block;
       padding: 11px 18px;
@@ -52,72 +105,172 @@
       color: white;
       text-decoration: none;
       border-radius: 6px;
+      font-weight: bold;
     }
+
+    .button:hover {
+      background: #104d48;
+    }
+
+    .services-layout {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .services-text,
+    .services-image {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .services-text ul {
+      padding-left: 22px;
+    }
+
+    .services-text li {
+      margin-bottom: 6px;
+    }
+
+    .services-image img {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .contact-details {
+      overflow-wrap: anywhere;
+    }
+
     footer {
       text-align: center;
-      padding: 25px;
+      padding: 25px 20px;
       color: #526363;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 28px 18px;
+      }
+
+      .logo {
+        max-width: 230px;
+      }
+
+      main {
+        margin: 20px auto;
+        padding: 0 12px;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .services-layout {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .services-text,
+      .services-image {
+        width: 100%;
+      }
+
+      .services-image img {
+        max-width: 100%;
+      }
+
+      nav a {
+        margin: 4px 8px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <img src="logo4.jpeg" alt="Logo" style="width: 350px; height: auto;">
-  <h1 style="font-size: 45px;">Professional foot care in the comfort of your own home</h1>
+  <img class="logo"
+       src="logo4.jpeg"
+       alt="LaCures Mobile Foot Health Service logo">
+
+  <h1>Professional Foot Care in the Comfort of Your Own Home</h1>
+  <p>Friendly, professional mobile foot care and home visits</p>
 </header>
 
-<nav>
-  <a href="#services">Services</a> 
-  <a href="#about">About</a>
+<nav aria-label="Main navigation">
+  <a href="#services">Services</a>
+  <a href="#about">About Me</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <main>
-  <section>
-    <h2>Welcome</h2>
+
+  <section id="welcome">
+    <h2>Welcome to LaCures Mobile Foot Health Service</h2>
+
     <p>
-      I provide mobile podiatry services, bringing foot care
-      directly to you in your own home.
+      I provide mobile foot care services, bringing professional care
+      directly to you in the comfort of your own home.
     </p>
+
     <p>
-      Contact me to discuss your needs and my availability.
+      Contact me to discuss your foot care needs and my availability.
     </p>
-    <a class="button" href="#services">View my services</a>
-    <a class="button" href="#contact">Get in touch</a>
+
+    <a class="button" href="#services">View My Services</a>
+    <a class="button" href="#contact">Get in Touch</a>
   </section>
-<section id="services">
-  <h2>My Services</h2>
 
-  <div style="display: flex; align-items: center; gap: 25px; flex-wrap: wrap;">
+  <section id="services">
+    <h2>My Services</h2>
 
-    <div style="flex: 1; min-width: 220px;">
-      <ul>
-        <li>Toe Nail Reduction</li>
-        <li>Nail Cutting</li>
-        <li>Callus Reduction</li>
-        <li>Corn Removal</li>
-        <li>Verrucae Treatment</li>
-        <li>Diabetic Foot Assessments</li>
-      </ul>
+    <div class="services-layout">
 
-      <p>Contact me to discuss your particular requirements.</p>
+      <div class="services-text">
+        <p>
+          I offer a range of foot care services during convenient home visits,
+          including:
+        </p>
+
+        <ul>
+          <li>Toenail reduction</li>
+          <li>Nail cutting</li>
+          <li>Callus reduction</li>
+          <li>Corn removal</li>
+          <li>Verrucae treatment</li>
+          <li>Diabetic foot assessments</li>
+        </ul>
+
+        <p>
+          Please get in touch to discuss your particular requirements
+          and suitability for treatment.
+        </p>
+
+        <a class="button" href="#contact">Enquire About a Visit</a>
+      </div>
+
+      <div class="services-image">
+        <img src="feetlogo.jpg"
+             alt="Foot care services"
+             loading="lazy">
+      </div>
+
     </div>
-
-    <div style="flex: 1; min-width: 220px;">
-      <img src="feetlogo.jpg"
-           alt="Mobile foot care services"
-           style="display: block; width: 100%; max-width: 350px; height: auto; border-radius: 10px; margin: 0 auto;">
-    </div>
-
-  </div>
-</section>
+  </section>
 
   <section id="about">
     <h2>About Me</h2>
+
     <p>
-    I am a registered Podiatrist providing a friendly service in the comfort of your own home.  HCPC Registered and insured by The Royal College of Podiatry.
+      I am a registered podiatrist providing a friendly service in the
+      comfort of your own home. I am HCPC registered and insured by
+      the Royal College of Podiatry.
     </p>
+
     <p>
       I offer home visits in Birmingham and surrounding areas.
     </p>
@@ -125,26 +278,38 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Please get in touch.</p>
+
+    <p>
+      Please get in touch to discuss your requirements or ask about
+      appointment availability.
+    </p>
 
     <a class="button"
        href="mailto:Lacures@hotmail.com?subject=Podiatry%20enquiry">
-       Email me
+      Email Me
     </a>
 
     <a class="button" href="tel:07956353027">
-      Call me
+      Call Me
     </a>
-    <p>
-      Phone: 07956 353 027<br>
-      Email: lacures@hotmail.com
-    </p>
+
+    <div class="contact-details">
+      <p>
+        <strong>Phone:</strong>
+        <a href="tel:07956353027">07956 353 027</a>
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:Lacures@hotmail.com">Lacures@hotmail.com</a>
+      </p>
+    </div>
   </section>
+
 </main>
 
 <footer>
   <p>&copy; 2026 LaCures Mobile Foot Health Service</p>
- 
 </footer>
 
 </body>
