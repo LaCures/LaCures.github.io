@@ -45,22 +45,24 @@
       font-size: 2rem;
     }
 
-    /* Slogan with small decorative footprints */
+    /* Slogan with decorative footprints */
     .slogan {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       padding: 8px 5px;
+      text-align: center;
     }
 
     .slogan-text {
-      font-size: 1rem;
+      font-size: 2rem;
       font-weight: bold;
+      line-height: 1.2;
     }
 
     .footprint {
-      font-size: 1.2em;
+      font-size: 2.4rem;
       line-height: 1;
       flex-shrink: 0;
     }
@@ -174,11 +176,25 @@
       }
 
       .slogan-text {
-        font-size: 10rem;
+        font-size: 1.55rem;
       }
 
       .footprint {
-        font-size: 1.15em;
+        font-size: 1.9rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .slogan {
+        gap: 4px;
+      }
+
+      .slogan-text {
+        font-size: 1.3rem;
+      }
+
+      .footprint {
+        font-size: 1.6rem;
       }
     }
   </style>
@@ -192,7 +208,6 @@
       alt="LaCures Mobile Foot Health Service logo"
       class="logo"
     >
-
 
     <div class="slogan">
       <span class="footprint" aria-hidden="true">👣</span>
