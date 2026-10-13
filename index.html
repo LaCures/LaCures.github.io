@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>LaCures Mobile Foot Health Service | Home Visits</title>
+
   <meta name="description" content="Professional mobile foot care in the comfort of your own home in Birmingham and surrounding areas.">
+
   <meta name="theme-color" content="#17665f">
 
   <style>
@@ -34,18 +36,11 @@
     }
 
     .logo {
-  display: block;
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  margin: 0 auto 20px;
-}
-
-    header h1 {
-      max-width: 900px;
-      margin: 0 auto 10px;
-      font-size: clamp(28px, 5vw, 42px);
-      line-height: 1.25;
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto 20px;
     }
 
     header p {
@@ -91,27 +86,26 @@
       scroll-margin-top: 20px;
     }
 
-  
-h2 {
-  color: #17665f;
-  margin-top: 0;
-  margin-bottom: 8px;
-  line-height: 1.3;
-}
+    h2 {
+      color: #17665f;
+      margin-top: 0;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
 
-#about h2,
-#services h2 {
-  margin-bottom: 8px;
-}
+    .about-image {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
 
-#services .services-text ul {
-  margin-top: 0;
-  padding-left: 22px;
-}
-
-#services h2 {
-  margin-bottom: 0;
-}
+    .about-image img {
+      display: block;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
 
     .button {
       display: inline-block;
@@ -134,36 +128,30 @@ h2 {
       gap: 30px;
     }
 
-    .services-text,
-    .services-image {
+    .services-text {
       flex: 1;
       min-width: 0;
     }
 
-   #services h2 {
-  margin-bottom: 16px;
-}
-
-#services .services-text ul {
-  margin-top: 0;
-  padding-left: 22px;
-}
+    .services-text ul {
+      margin-top: 0;
+      padding-left: 22px;
+    }
 
     .services-text li {
       margin-bottom: 6px;
     }
 
-    .services-image img {
-      display: block;
-      width: 100%;
-      max-width: 380px;
-      height: auto;
-      margin: 0 auto;
-      border-radius: 10px;
-    }
-
     .contact-details {
       overflow-wrap: anywhere;
+    }
+
+    .footer-logo {
+      display: block;
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      margin: 15px auto 0;
     }
 
     footer {
@@ -178,7 +166,7 @@ h2 {
       }
 
       .logo {
-        max-width: 400px;
+        max-width: 340px;
       }
 
       header p {
@@ -194,18 +182,22 @@ h2 {
         padding: 20px;
       }
 
+      .about-image {
+        margin: 20px auto;
+        padding: 0 12px;
+      }
+
+      .about-image img {
+        max-height: 250px;
+      }
+
       .services-layout {
         flex-direction: column;
         align-items: stretch;
       }
 
-      .services-text,
-      .services-image {
+      .services-text {
         width: 100%;
-      }
-
-      .services-image img {
-        max-width: 100%;
       }
 
       nav a {
@@ -217,98 +209,112 @@ h2 {
 
 <body>
 
-<header>
-  <img class="logo"
-       src="logo4.jpeg"
-       alt="LaCures Mobile Foot health Service logo">
-  
+  <header>
+    <img
+      class="logo"
+      src="logo4.jpeg"
+      alt="LaCures Mobile Foot Health Service logo"
+    >
 
-  <p>'putting your feet first'</p>
-</header>
+    <p>Putting your feet first</p>
+  </header>
 
-<nav aria-label="Main navigation">
-  <a href="#about">About Me</a>
-  <a href="#services">My Services</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <nav aria-label="Main navigation">
+    <a href="#about">About Me</a>
+    <a href="#services">My Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<main>
+  <main>
 
-  <section id="about">
-    <h2>About Me</h2>
-
-    <p>
-      Welcome, im Lauren. As a BSc (Hons) registered podiatrist.  I pride myself on delivering a friendly, professional service tailored to your needs. I am HCPC registered and insured by
-      the Royal College of Podiatry.
-    </p>
-
-    <p>
-      I offer home visits in Birmingham and surrounding areas.
-      Care home services are also available.
-    </p>
-  </section>
-
-  <section id="services">
-    <h2>My Services</h2>
-
-    <div class="services-layout">
-      <div class="services-text">
-        <ul>
-          <li>Toe Nail Reduction</li>
-          <li>Nail Cutting</li>
-          <li>Callus Reduction</li>
-          <li>Corn Removal</li>
-          <li>Verruca Treatment</li>
-          <li>Diabetic Foot Assessments</li>
-        </ul>
-
-      </div>
-
-      </div>
+    <div class="about-image">
+      <img
+        src="Feetlogo.jpg"
+        alt="Professional foot care at home"
+      >
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
+    <section id="about">
+      <h2>About Me</h2>
 
-    <p>
-      Please get in touch to discuss your requirements or ask about
-      appointment availability.
-    </p>
-
-    <a class="button"
-       href="mailto:Lacures@hotmail.com?subject=Podiatry%20enquiry">
-      Email Me
-    </a>
-
-    <a class="button" href="tel:07956353027">
-      Call Me
-    </a>
-
-    <div class="contact-details">
       <p>
-        <strong>Phone:</strong>
-        <a href="tel:07956353027">07956 353 027</a>
+        Welcome, I'm Lauren. As a BSc (Hons) registered
+        podiatrist, I pride myself on delivering a friendly,
+        professional service tailored to your needs. I am
+        HCPC registered and insured by the Royal College of
+        Podiatry.
       </p>
 
       <p>
-        <strong>Email:</strong>
-        <a href="mailto:Lacures@hotmail.com">Lacures@hotmail.com</a>
+        I offer home visits in Birmingham and surrounding
+        areas. Care home services are also available.
       </p>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <section id="services">
+      <h2>My Services</h2>
 
-<footer>
-  <p>&copy; 2026 LaCures Mobile Foot Health Service</p>
-</footer>
-<footer>
-  <p>Professionally Registered and Insured</p>
+      <div class="services-layout">
+        <div class="services-text">
+          <ul>
+            <li>Toe Nail Reduction</li>
+            <li>Nail Cutting</li>
+            <li>Callus Reduction</li>
+            <li>Corn Removal</li>
+            <li>Verruca Treatment</li>
+            <li>Diabetic Foot Assessments</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <img src="hcpcins.png"
-       alt="hcpcins.png"
-       class="footer-logo">
-</footer>
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <p>
+        Please get in touch to discuss your requirements or
+        ask about appointment availability.
+      </p>
+
+      <a
+        class="button"
+        href="mailto:Lacures@hotmail.com?subject=Podiatry%20enquiry"
+      >
+        Email Me
+      </a>
+
+      <a class="button" href="tel:07956353027">
+        Call Me
+      </a>
+
+      <div class="contact-details">
+        <p>
+          <strong>Phone:</strong>
+          <a href="tel:07956353027">07956 353 027</a>
+        </p>
+
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:Lacures@hotmail.com">Lacures@hotmail.com</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 LaCures Mobile Foot Health Service</p>
+  </footer>
+
+  <footer>
+    <p>Professionally Registered and Insured</p>
+
+    <img
+      src="hcpcins.png"
+      alt="Professional registration and insurance"
+      class="footer-logo"
+    >
+  </footer>
+
 </body>
 </html>
